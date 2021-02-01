@@ -1,109 +1,204 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>The Witcher | Netflix</title>
-        <meta charset="UTF-8" /> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      
-        <title>Home / Twitter</title>
-        <link rel="icon" href="https://pngimg.com/uploads/netflix/netflix_PNG15.png" type="image/icon type">
+<html class="dark">
+  <head>
+      <title>The Witcher | Netflix</title>
+      <link rel="icon" href="https://pngimg.com/uploads/netflix/netflix_PNG15.png" type="image/icon type">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-      
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Tailwind css cdn -->
+      <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  
+      <!-- Font Awesome icons (free version)-->
+      <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  
+      <link rel="icon" type="image/png" href="favicon.png" />
+      <style>
+          .pics {
+              min-width: 19%;
+          }
+  
+          .container-carousel .carousel {
+              display: flex;
+          }
+  
+          .container-carousel {
+              overflow-x: scroll; 
+              overflow : hidden;
+              -moz-overflow:hidden;
+              scroll-behavior: smooth;
+          }
+  
+      </style>
+  
     </head>
 
-    <body class="bg-cover bg-no-repeat w-full" style="background-image:url(https://www.betaseries.com/blog/wp-content/uploads/2020/07/20999_62227587.jpg)">
-         
-         <heather class="flex justify-between spance-x-4 w-30 pt-4 pr-4 ml-20 ">
-             <div class="flex space-x-8">
-          <img class="w-24" src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" >
-           <div class="text-white space-x-4 font-bold"> <a href="#">Acceuil</a>
-            <a href="#">Série</a>
-            <a href="#">Films</a>
-            <a href="#">Nouveutés</a>
-            <a href="#">Ma liste</a> </div> </div>
+  <body>
+      <section class="bg-cover bg-no-repeat w-full" style="background-image:url(https://www.betaseries.com/blog/wp-content/uploads/2020/07/20999_62227587.jpg)">
+           <heather class="flex justify-between spance-x-4 w-30 pt-4 pr-4 ml-20 ">
+                  <div class="flex space-x-8">
+                   <img class="w-24" src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" >
+                   <div class="text-white space-x-4 font-bold"> 
+                     <a href="#">Acceuil</a>
+                     <a href="#">Série</a>
+                     <a href="#">Films</a>
+                     <a href="#">Nouveutés</a>
+                     <a href="#">Ma liste</a> 
+                   </div> 
+                  </div>
 
-            <div  class="md:ml-auto hidden lg:flex  space-x-6 items-center text-base flex justify-end font-semibold text-white">
-               <a href="#"> <svg class="w-6 h-6 font-bold" fill="currentColor" viewBox="0 0 20 20" ><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg> </a>
-               <a href="#"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg> </a>
-               <a href="#"> <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg> </a>
-                <button class="flex items-center">
-                    <img src="https://occ-0-58-64.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABTw7t_oDR-SWh9ddj9kh9AlOqCabZMupMWano7R5wg9x1_KPjvABqKHNeCxcMddK7Ku9HsV6keglPmWPZeh0lKU.png?r=fcc" alt="">
-                    <svg class="w-5 h-5 stroke-current text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </div>
-         </heather>
+                  <div  class="md:ml-auto hidden lg:flex  space-x-6 items-center text-base flex justify-end font-semibold text-white">
+                     <a href="#"> <svg class="w-6 h-6 font-bold" fill="currentColor" viewBox="0 0 20 20" ><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg> </a>
+                     <a href="#"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg> </a>
+                     <a href="#"> <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg> </a>
+                     <button class="flex items-center">
+                     <img src="https://occ-0-58-64.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABTw7t_oDR-SWh9ddj9kh9AlOqCabZMupMWano7R5wg9x1_KPjvABqKHNeCxcMddK7Ku9HsV6keglPmWPZeh0lKU.png?r=fcc" alt="">
+                     <svg class="w-5 h-5 stroke-current text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                     </button>
+                  </div>
+            </heather>
 
-         <div class="w-6/12 ml-24 mt-10 pt-10 text-white text-lg ">
-             <img class="w-10/12" src="https://occ-0-92-1723.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABYYu4viryKCrifvnlapgKlSFVDdWEQQNIVfzEf2SaxoHk-8XzTrswyzVS7hzI_QHmAH8RFHyvTTNSGYOWZXvOOu2M-Gr5WSDkAEi8RPFc82mwSUBMnIGkrGJRqFWLf5L2KtDRArY_cFa2mzaA7UviyCV-cCqp8y9hCG8Zjrq24HDbA.png?r=43f"><br>
-             <p class="font-bold">Regardez la saison 1 maintenant</p><br>
-             <p> Même une sorceleur ne peut lutter contre le destin. Au<br>
-             ban de la socièté, il ne lui reste plus que son épée et sa<br>
-             morle. </p>
-         </div>
+                <div class="w-6/12 ml-24 mt-10 pt-10 text-white text-lg ">
+                     <img class="w-10/12" src="https://occ-0-92-1723.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABYYu4viryKCrifvnlapgKlSFVDdWEQQNIVfzEf2SaxoHk-8XzTrswyzVS7hzI_QHmAH8RFHyvTTNSGYOWZXvOOu2M-Gr5WSDkAEi8RPFc82mwSUBMnIGkrGJRqFWLf5L2KtDRArY_cFa2mzaA7UviyCV-cCqp8y9hCG8Zjrq24HDbA.png?r=43f"><br>
+                     <p class="font-bold">Regardez la saison 1 maintenant</p><br>
+                     <p> Même une sorceleur ne peut lutter contre le destin. Au<br>
+                     ban de la socièté, il ne lui reste plus que son épée et sa<br>
+                     morle. </p>
+                </div>
 
-         <div class="flex space-x-4 flex-row w-full">
+                <div class="flex space-x-4 flex-row w-full">
         
-          <button class=" px-3 mt-5 ml-24 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50  space-x-2 py-2 justify-center flex w-32">
-            <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 163.861 163.861"><path d="M34.857,3.613C20.084-4.861,8.107,2.081,8.107,19.106v125.637c0,17.042,11.977,23.975,26.75,15.509L144.67,97.275 c14.778-8.477,14.778-22.211,0-30.686L34.857,3.613z"/></svg>          
-            <span class="text-white font-semibold">Lecture</span>
-          </button>
-          <div class=" flex space-x-8" >
-          <button class=" px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50  space-x-2 py-2 justify-center flex w-auto">
-            <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 448 448"><path d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0"/></svg>            
-            <span class="text-white font-semibold">Ma Liste</span>
-          </button>
+                  <button class=" px-3 mt-5 ml-24 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50  space-x-2 py-2 justify-center flex w-32">
+                     <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 163.861 163.861"><path d="M34.857,3.613C20.084-4.861,8.107,2.081,8.107,19.106v125.637c0,17.042,11.977,23.975,26.75,15.509L144.67,97.275 c14.778-8.477,14.778-22.211,0-30.686L34.857,3.613z"/></svg>          
+                     <span class="text-white font-semibold">Lecture</span>
+                  </button>
+          
+                 <div class=" flex space-x-8" >
+                  <button class=" px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50  space-x-2 py-2 justify-center flex w-auto">
+                    <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 448 448"><path d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0"/></svg>            
+                    <span class="text-white font-semibold">Ma Liste</span>
+                  </button>
         
-          <button class=" px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50  space-x-2 py-2 justify-center flex w-auto">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <span class="text-white font-semibold">Plus d'infos</span>
-          </button>
+                  <button class=" px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50  space-x-2 py-2 justify-center flex w-auto">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-white font-semibold">Plus d'infos</span>
+                  </button>
+                 </div>
+                </div>   
+      </section>
+
+
+      <section class="text-white bg-black">
+        <!-- catalog -->
+        
+        <div class="pl-16 py-10">
+            <p class="py-2 font-semibold text-xl">My List</p>
+            <div class="flex items-center relative">
+
+                <!-- arrow left -->
+                <div class="absolute left-0 left-arrow">
+                    <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-left"></i></button>
+                </div>
+
+
+               <div class="container-carousel">
+                <div class=" carousel grid gap-2">
+                <div class="flex">
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\13rw.jpeg" alt="" class="rounded"></a> </div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\casa.jfif" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\blackmirror.jpeg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\dark.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\elite.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\narcos.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\oitnb.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\ragnarok.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\strangerthings.jpeg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\thecrown.jpg" alt="" class="rounded"></a></div>
+                </div>
+                </div> 
+               </div>
+                  <!-- arrow right -->
+                <div class="absolute right-0 right-arrow">
+                  <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-right"></i></button>
+              </div>
+            
+                </div>
         </div>
-         </div>         
-    </body>
-</html>
 
+        <div class="pl-16 py-10">
+          <p class="py-2 font-semibold text-xl">Tv Shows</p>
+          <div class="flex items-center relative">
 
+              <!-- arrow left -->
+              <div class="absolute left-0 left-arrow">
+                  <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-left"></i></button>
+              </div>
+              <div class="container-carousel">
+                <div class="carousel grid gap-2">
+                  <div class="flex">
+                  <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\13rw.jpeg" alt="" class="rounded"></a> </div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\casa.jfif" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\blackmirror.jpeg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\dark.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\elite.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\narcos.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\oitnb.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\ragnarok.jpg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\strangerthings.jpeg" alt="" class="rounded"></a></div>
+                 <div class="pics"> <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\thecrown.jpg" alt="" class="rounded"></a></div>
+              </div> 
+            </div>
+          </div>
+        </div>
+           <!-- arrow right -->
+           <div class="absolute right-0 right-arrow">
+            <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-right"></i></button>
+        </div>
+        </div>
 
-      
+            <div class="px-12 py-6">
+              <p class=font-semibold>Trending Now</p>
+              <div class="grid gap-2 grid-cols-5">
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\13rw.jpeg" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\casa.jfif" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\blackmirror.jpeg" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\dark.jpg" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\elite.jpg" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\narcos.jpg" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\oitnb.jpg" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\ragnarok.jpg" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\strangerthings.jpeg" alt="" class="rounded"></a>
+                  <a href="#"><img src="C:\Users\nazim\Downloads\netflix project\thecrown.jpg" alt="" class="rounded"></a>
+              </div> 
+            </div>
 
+            
 
+   </section>
 
+      <script>
 
+        const carousel = document.querySelector('.container-crousel');
 
+        const left = document.getElementById('left');
+        const right = document.getElementById('right');
 
-     
+        // right -> Event listener // 
+ 
+        right.addEventListener("click", () => {
+          carousel.scrollLeft +=carousel.offsetWidth;
+        });
 
+         // left -> Event listener // 
+ 
+         left.addEventListener("click", () => {
+          carousel.scrollLeft +=carousel.offsetWidth;
+        });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </script>    
+  
+  </body>
 </html>
