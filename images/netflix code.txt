@@ -1,0 +1,125 @@
+<!-- arrow right -->
+
+<div class="absolute right-0 right-arrow">
+
+<button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-right"></i></button>
+
+</div>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+<style>
+
+.pics {​​
+
+min-width: 19%;
+
+}​​
+.container-carousel .carousel {​​
+
+display: flex;
+
+}​​
+.container-carousel {​​
+
+overflow-x: scroll;
+
+scroll-behavior: smooth;
+
+}​​
+
+</style>
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<script>
+
+const carousel = document.querySelector('.container-carousel');
+
+
+const left = document.querySelector('.left-arrow');
+
+const right = document.querySelector('.right-arrow');
+
+
+
+// // right -> Event listener //
+
+
+right.addEventListener("click", () => {​​
+
+carousel.scrollLeft +=carousel.offsetWidth;
+
+}​​);
+
+
+
+// left -> Event listener //
+
+
+left.addEventListener("click", () => {​​
+
+carousel.scrollLeft -=carousel.offsetWidth;
+
+}​​);
+</script>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+<div class="container-carousel">
+
+<div class="carousel grid gap-2">
+
+<div class="pics">
+
+<a href="#"><img src="assets/img/the100.png" alt="" class="rounded"></a>
+
+</div>
+
+
+
+<div class="pics">
+
+<a href="#"><img src="assets/img/breakingbad.png" alt="" class="rounded"></a>
+
+</div>
+
+
+
+<div class="pics">
+
+<a href="#"><img src="assets/img/lupin.png" alt="" class="rounded"></a>
+
+</div>
+
+
+
+<div class="pics">
+
+<a href="#"><img src="assets/img/aliceinborderland.png" alt="" class="rounded"></a>
+
+</div>
+
+
+
+<div class="pics">
+
+<a href="#"><img src="assets/img/suicidesquad.png" alt="" class="rounded"></a>
+
+</div>
+
+
+
+<div class="pics">
+
+<a href="#"><img src="assets/img/onepunchman.png" alt="" class="rounded"></a>
+
+</div>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
